@@ -19,17 +19,14 @@ int main(){
 
      if(working%2 == 0){
         working /= 2;
-        step ++;
-
      }
-     else if(working%2 == 1){
-        working *= 3;
-        working ++;
-        step ++;
+     else (working%2 == 1){
+        working = working * 3 + 1;
         if(working > maximum){
             maximum = working;
         }
      }
+     step ++;
      std::cout << working << std::endl;
     }
 
